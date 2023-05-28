@@ -1,0 +1,58 @@
+[netsh]
+AutoTuningLevelLocal=3
+ScalingHeuristics=2
+CongestionProvider=2
+ReceiveSegmentCoalescing=1
+ReceiveSideScaling=1
+Large Send Offload=2
+Checksum Offload=2
+EcnCapability=2
+Chimney=2
+Timestamps=2
+MaxSynRetransmissions=3
+NonSackRttResiliency=2
+InitialRto(ms)=2000
+MinRto(ms)=300
+[SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPER1_0SERVER]
+explorer.exe=10
+iexplore.exe=10
+[SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPERSERVER]
+explorer.exe=10
+iexplore.exe=10
+[SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider]
+LocalPriority=4
+HostsPriority=5
+DnsPriority=6
+NetbtPriority=7
+[SOFTWARE\Policies\Microsoft\Windows\Psched]
+NonBestEffortLimit=0
+[System\CurrentControlSet\Services\Tcpip\QoS]
+Do not use NLA=1
+Do not use NLA_SEL=1
+[SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+NetworkThrottlingIndex=-1
+NetworkThrottlingIndex_SEL=0
+SystemResponsiveness=0
+SystemResponsiveness_SEL=0
+[SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+Size=1
+Size_SEL=1
+[SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+LargeSystemCache=0
+LargeSystemCache_SEL=0
+[SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+MaxUserPort=415028
+TcpTimedWaitDelay=-1
+DefaultTTL=64
+[SOFTWARE\Microsoft\MSMQ\Parameters]
+TCPNoDelay=1
+TCPNoDelay_SEL=1
+[Ethernet]
+MTU=1500
+[SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{7C1E1CAB-606B-43B3-9A5D-FC48D85344D1}]
+TcpAckFrequency=1
+TcpAckFrequency_SEL=1
+TcpDelAckTicks=0
+TcpDelAckTicks_SEL=0
+TCPNoDelay=1
+TCPNoDelay_SEL=1
